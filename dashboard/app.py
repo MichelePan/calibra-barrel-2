@@ -310,7 +310,9 @@ def update_table(n_clicks, historical_period, forecast_period):
     return rows
 
 # ================================
-# AVVIO SERVER
+# SERVER PER PRODUZIONE
 # ================================
-if __name__ == '__main__':
-    app.run(debug=True)
+server = app.server
+
+if __name__ == "__main__":
+    app.run_server(debug=True)
