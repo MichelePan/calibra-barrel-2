@@ -253,6 +253,7 @@ def update_table(n_clicks, historical_period, forecast_period):
     rows = []
 
     for _, ticker in TICKERS.items():
+        on_mkt_price = np.nan
         try:
             df_raw = yf.download(
                 ticker,

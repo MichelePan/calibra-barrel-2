@@ -3,3 +3,4 @@ numpy
 dash
 statsmodels
 yfinance
+gunicorn
